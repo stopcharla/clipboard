@@ -1,0 +1,8 @@
+The main idea behid the refactor was to not repeat ourselves. By segregating the library function i.e. generating the hash 
+to a new function we are able to completly unit test our code and are able to easily use dependency injection while testing.
+
+In this the main function deterministicPartitionKey is the governer of whe whole process. The function can control the flow or any logical changes.
+With this code we separated the dependency on event in further processing.
+The validations and length checks are segreagted and can be reused easily.
+
+The code is independent and all the fucntions are pure functions.
