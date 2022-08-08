@@ -17,7 +17,7 @@ Create a new table <FacilityId>_AgentMapping for Facility
 Description:
 
 All facilities that are newly created should have a new <FacilityId>_AgentMapping table created. 
-Best handled on events from db streams, i.e. when a new row is added to Facility table a new tableis created
+Best handled on events from db streams, i.e. when a new row is added to Facility table a new table is created
 
 
 Acceptance Criteria:
@@ -51,8 +51,6 @@ Create a new POST API to add custom mapping for facility to user
 Description: 
 A new post api to allow facilites to add custom id for the agents. The data will be stored in the database with table name <FacilityId>_AgentMapping. 
 
-
-
 Acceptance Criteria:
 The custom id is added/replaced to the db table <FacilityId>_AgentMapping
 No multiple agents should have same custom id.
@@ -72,8 +70,6 @@ Create a GET endpoint to obtain custom agent mappings for facility.
 Description:
 Create a GET API to accept 1 compulsory parameter facilityId and other optional parameter agentId and optional pagination info.
 The api returns the required custom ids for all agents or only specific agent depending on the agentID.
-
-
 
 Acceptance Criteria:
 Return all paginated custom ids when only facility id is provided.
